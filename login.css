@@ -1,0 +1,126 @@
+body{
+    margin: 0px auto;
+}
+.box{
+    margin: 0px auto;
+    background: url(./images/pexels-andrew-patrick-12934607.jpg);
+    background-size: cover;
+
+    width: 100%;
+    height: 100dvh;
+    display: flex; 
+    }
+.l-cont{
+    color: wheat;
+    width: 70%;
+    height: 500px;
+}
+.r-cont{
+    width: 35%;
+    height: 100%;
+    backdrop-filter: blur(30px);
+}
+.desc{
+    margin: 120px;
+    padding: 50px 30px;
+    width: 400px;
+    background: rgba(0,0,0,0.9);
+}
+.box-cont{
+    padding: 40px;
+    width: 240px;
+    height: 320px;
+    background-color: transparent;
+    /* border: 1px solid gray; */
+    box-shadow: 4px 2px 5px;
+    position: relative;
+    top: 12%;
+    left: 28%;
+    border-radius: 10px;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 2px 3px 4px 3px;
+    /* color: white; */
+}
+.button{
+    color: white;
+    background: black;
+    border: none;
+    position: center;
+    padding: 5px 1px;
+    border-radius: 5px;
+    width: 80px;
+    margin-top: 10px;
+    transform: translateX(75px);
+    box-shadow: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:710px) {
+    .box{
+        margin: 0px auto;
+        background: url(./images/pexels-andrew-patrick-12934607.jpg);
+        background-size: cover;
+    
+        width: 100%;
+        height: 100dvh;
+        display: flex; 
+        }
+    .l-cont{
+        display: none;
+    }
+    .r-cont{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        backdrop-filter: blur(30px);
+    }
+    .box-cont{
+        position: relative;
+        left: 13%;
+        top:20%;
+        background: rgba(0,0,0,0.3);
+    }
+    .desc{
+        display: none;
+    }
+}
+    @media (min-width:720px) and (max-width:1100px){
+        .box{
+            margin: 0px auto;
+            background: url(./images/pexels-andrew-patrick-12934607.jpg);
+            background-size: cover;
+        
+            width: 100%;
+            height: 100dvh;
+            display: flex; 
+            }
+        .l-cont{
+            width: 40%;
+            height: 100vh;
+            border: 1px solid black;
+        }
+        .r-cont{
+            width: 60%;
+            height: 100%;
+            position: relative;
+            backdrop-filter: blur(30px);
+        }
+        .box-cont{
+            position: relative;
+            left: 20%;
+            top:20%;
+        }
+        .desc{
+            display: none;
+        }
+    
+}

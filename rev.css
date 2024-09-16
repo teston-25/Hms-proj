@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.main{
+    background: url(images/pexels-kelly-2869215.jpg);
+    background-size: cover;
+    width: 100vw;
+    height:100vh;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.header-right{
+    display: flex;
+    font-size: 22px;
+    backdrop-filter: blur(30px);
+    width: 640px;
+    padding: 10px;
+    align-items: end;
+    text-transform: uppercase;
+}
+.header-right a:hover{
+    text-decoration: underline;
+}
+.header-left{
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bar-2 {
+    text-decoration: underline;
+}
+
+.num {
+    font-weight: bolder;
+}
+
+.header-right section {
+    padding: 0 80px 0 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.m-body {
+    color: #d0d6f9;
+    font-family: 'Barlow Condensed',
+        sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    width: 100dvw;
+    height: 460px;
+    backdrop-filter: blur(30px);
+}
+
+#num {
+    font-weight: bold;
+    color: white;
+    padding-left: 250px;
+}
+.b-header {
+    display: flex;
+    justify-content: space-around;
+}
+.bar-menu{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.bar-menu a:hover{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.bar-menu a{
+    padding: 50px;
+    padding-right: 20px;
+    align-items: center;
+}
+.text-area{
+    backdrop-filter: blur(30px);
+    padding: 50px;
+}
+.h-m {
+    align-items: left;
+    color: white;
+    padding: 40px 0px 10px 0;
+    font-family: 'Bellefair', serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+}
+
+.h-p {
+    padding-left: 8px;
+    padding-bottom: 50px;
+    font-size: 22px;
+    color: white;
+}
+.menu{
+    display: none;
+}
+
+@media (max-width:710px) {
+    .main{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .header-right{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 25px;
+        padding-top: 30px;
+        width: 23%;
+        height: 30%;
+        backdrop-filter: blur(50px);
+        inset: 0 0 0 40%;
+        align-items: flex-start;
+        gap: 15px;
+
+        transform: translateX(100%);
+        transition: all 0.5s ease-out;
+    }
+    .menu{
+        display: block;
+        background-image: url(shared/icon-hamburger2.svg );
+        background-color:transparent;
+        position: absolute;
+        height: 21px;
+        width: 20px;
+        top: 38px;
+        right: 20px;
+        border: none;
+        z-index: 999;
+    }
+    .menu span{
+        display: none;
+    }
+    .primary-nav[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .menu[aria-expanded="true"]{
+        background-image: url(shared/icon-close2.svg);
+        background-color:transparent ;
+    }
+    .home-body{
+        margin: 0;
+        display: block;
+        align-items: center;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #h-s{
+        font-size: 50px;
+        padding: 0 10px;
+    }
+    #h-h{
+        font-size: 30px;
+        margin: 0;
+        padding: 0 10px;
+        }
+        .outter-shell{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .home-left{
+            padding: 15px;
+            inset:none;
+            backdrop-filter:none;
+            background: rgba(0,0,0,0.5);
+            border-radius: 50px 0px;
+        }
+        .text-area{
+            padding: 10px 20px;
+        }
+        .h-m{
+            font-size: 40px;
+        }
+        .h-p{
+            font-size: 14px;
+        }
+        .bar-menu a{
+            padding: 10px;
+            font-size: 18px;
+        }
+        .bar-menu a:hover{
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        .desc-bar{
+            margin: 10px auto;
+            position: relative;
+            left: 20%;
+        }   
+    }

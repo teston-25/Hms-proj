@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.a2-a-view{
+    background: url(images/book2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height:80vh;
+    margin-bottom: 100px;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.header-right{
+    display: flex;
+    font-size: 22px;
+    backdrop-filter: blur(30px);
+    width: 640px;
+    padding: 10px;
+    align-items: end;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+.header-left{
+    padding-left: 20px;
+    font-size: 22px;
+    display: block;
+}
+.intro{
+    display: flex;
+    justify-content: space-between;
+}
+.book{
+    width: 350px;
+    height: 230px;
+    display: block;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter: blur(30px);
+    border-radius: 0px 20px 20px 0px;
+    padding: 50px; 
+    color: wheat;
+    font-size: 22px;
+    transform: translateY(60px);
+}
+.book input,select{
+    width: 180px;
+    border-radius: 10px;
+    user-select: all;
+    padding: 2px;
+}
+#check{
+    background: black;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transform: translateX(35px);
+    border: none;
+    outline: none;
+}
+.header-left{
+    padding-left: 20px;
+    font-size: 22px;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: wheat;
+}
+.menu{
+    display: none;
+}
+.bar-r:hover{
+    text-decoration: underline;
+    color: wheat;
+}
+.bar-3 {
+    text-decoration: underline;
+}
+.header-right section{
+    padding: 0 80px 0 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.num{
+    font-weight: bolder;
+}
+.r-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px 10px;
+    margin-bottom: 60px;
+}
+.left-side{
+    transition: all 1s ease-in;    
+}
+.b-title{
+    text-align: center;
+}
+.b2-b-view{
+    margin-top: 50px;
+}
+.review-room{
+    /* position: relative; */
+    border: 1px solid black;
+}
+.review-room .ro-all{
+    padding: 15px;
+}
+.review-room .ro-all h1{
+    line-height: 22px;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+.review-room .ro-all p{
+    font-size: 14px;
+}
+.review-room .ro-all h4{
+    line-height: 3px;   
+}
+
+
+@media (max-width:710px) {
+    .main{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .header-right{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 25px;
+        padding-top: 30px;
+        width: 23%;
+        height: 30%;
+        backdrop-filter: blur(50px);
+        inset: 0 0 0 40%;
+        align-items: flex-start;
+        gap: 15px;
+
+        transform: translateX(100%);
+        transition: all 0.5s ease-out;
+    }
+    .menu{
+        display: block;
+        background-image: url(shared/icon-hamburger.svg );
+        background-color:transparent;
+        position: absolute;
+        height: 21px;
+        width: 20px;
+        top: 38px;
+        right: 20px;
+        border: none;
+        z-index: 999;
+    }
+    .menu span{
+        display: none;
+    }
+    .primary-nav[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .menu[aria-expanded="true"]{
+        background-image: url(shared/icon-close.svg);
+        background-color:transparent ;
+    }
+    .home-body{
+        margin: 0;
+        display: block;
+        align-items: center;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    #h-s{
+        font-size: 50px;
+        padding: 0 10px;
+    }
+    #h-h{
+        font-size: 30px;
+        margin: 0;
+        padding: 0 10px;
+        }
+    .outter-shell{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .home-left{
+        padding: 15px;
+        inset:none;
+        backdrop-filter:none;
+        background: rgba(0,0,0,0.5);
+        border-radius: 50px 0px;
+    }
+    .book{
+        transform: translateY(0px);
+    }
+    .r-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 5px 5px;
+        margin-bottom: 60px;
+    }
+    .review-room .ro-all h1{
+        line-height: 20px;
+        font-size: 22px;
+    }
+    
+}
+
+
